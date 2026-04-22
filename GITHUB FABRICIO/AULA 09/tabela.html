@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 09 - Formulário</title>
+</head>
+
+<body>
+    <h1>Formulario</h1>
+
+    <form>
+        <table border="1">
+
+            <tr>
+                <td>Nome:</td>
+                <td colspan="2">
+                    <input type="text" name="nome" placeholder="Digite seu nome">
+                </td>
+            </tr>
+
+            <tr>
+                <td>E-mail pessoal:</td>
+                <td colspan="2">
+                    <input type="email" name="email_pessoal">
+                </td>
+            </tr>
+
+            <tr>
+                <td>E-mail (pattern):</td>
+                <td colspan="2">
+                    <input type="text" name="email_pattern" placeholder="Digite seu email com @" pattern="^[^@]+@[^@]+\.[^@]+$">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Senha:</td>
+                <td colspan="2">
+                    <input type="password" name="senha">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Idade:</td>
+                <td colspan="2">
+                    <input type="number" name="idade" min="0" max="120">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="3">Deixe um comentário:</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <textarea name="comentario" cols="50" rows="6"></textarea>
+                </td>
+
+                <td>
+                    <select name="investimentos_lista" size="8">
+                        <option>Poupança</option>
+                        <option>CDB</option>
+                        <option>Tesouro Direto</option>
+                        <option>Fundos Imobiliários</option>
+                        <option>CDI</option>
+                        <option>Debêntures</option>
+                        <option>Criptomoedas</option>
+                        <option>Ações</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Materia de interesse:<br>
+                    <input type="checkbox" name="materia" value="backend"> Backend <br>
+                    <input type="checkbox" name="materia" value="frontend"> FrontEnd <br>
+                    <input type="checkbox" name="materia" value="fullstack"> FullStack 
+                </td>
+
+                <td colspan="2">
+                    Tipo de Viagem:<br>
+                    <input type="radio" name="viagem" value="negocios"> Negócios <br>
+                    <input type="radio" name="viagem" value="lazer"> Lazer <br>
+                    <input type="radio" name="viagem" value="turismo"> Turismo <br>
+                    <input type="radio" name="viagem" value="academico"> Acadêmico
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Esporte favorito:<br>
+                    <select name="esporte" size="4">
+                        <option>Futebol</option>
+                        <option>Basquete</option>
+                        <option>Vôlei</option>
+                        <option>Tênis</option>
+                    </select>
+                </td>
+
+                <td colspan="2">
+                    Investimentos:<br>
+                    <select name="investimentos">
+                        <option>Poupança</option>
+                        <option>CDB</option>
+                        <option>Tesouro Direto</option>
+                        <option>Fundos Imobiliários</option>
+                        <option>CDI</option>
+                        <option>Debêntures</option>
+                        <option>Criptomoedas</option>
+                        <option>Ações</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Escolha uma cor:<br>
+                    <input type="color" name="cor">
+                </td>
+
+                <td colspan="2">
+                    Selecione um arquivo:<br>
+                    <input type="file" name="arquivo">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="3">
+                    Data e Hora envio:<br>
+                    <input type="datetime-local" name="datahora">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="submit" value="Enviar">
+                </td>
+                <td colspan="2">
+                    <input type="reset" value="Limpar">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+</html>
